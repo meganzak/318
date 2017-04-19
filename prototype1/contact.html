@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <link href="contact.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <form action="https://formspree.io/zakmm2648@uwec.edu" method="post">
+            <h1>Contact Us</h1>
+				<label>*Name:</label>
+					<input type="text" id="name" name="name">
+			<br>
+				<label>*Email:</label>
+					<input type="text" id="email" name="name" placeholder="ex: abc@uwec.edu">
+			<br>
+				<label>Address:</label>
+					<input type="text" id="address" name="name" placeholder="# and street"><br>
+				<label>City:</label>
+					<input type="text" id="city" name="name"><br>
+				<label>State:</label>
+					<input type="text" id="state" name="name" placeholder="WI"><br>
+				<label>Zip:</label>
+					<input type="text" id="zip" name="name" placeholder="#####">
+			<br>
+				<label>Request</label>
+					<select multiple id="request" name="request">
+						<option value="contact">Contact Us</option>
+						<option value="testdrive">Test Drive</option>
+						<option value="service">Service</option>
+						<option value="newsletter">Newsletter</option>
+					</select>
+			<br>
+				<textarea name="content" id="content" placeholder="Enter message here"></textarea>
+            <br>
+            <label>Recieve Offers?</label>
+            <input type="checkbox" id="sprinkles" name="sprinkles">
+            <label></label>
+			<br>
+			<input type="submit" name="send" id="send" value="Send">
+        </form>
+    </body>
+</html>
+
+CSS:
+* {
+    box-sizing: border-box;
+    margin: 5px;
+}
+option {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+form {
+    float: left;
+    width: 600px;
+    background-color: azure;
+    border-radius: 10px;
+}
+select, input, li, textarea {
+    float: left;
+}
+select, #range, #name, textarea {
+    width: 250px;
+}
+label {
+    float: left;
+    width: 250px;
+    clear: left;
+}
+#true, #false {
+    clear: none;
+    float: left;
+    width: auto;
+}
+textarea {
+    height: 75px;
+}
