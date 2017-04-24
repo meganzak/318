@@ -1,12 +1,177 @@
-footer {
-      text-align: left;  
-    }
-.directions {
-    text-align: center; 
-    font-weight: bold;
-    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    background-color: maroon;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+}
+header .label {
+    display: none;
+}
+nav {
+    background-color: darkblue;
+    color: white;
+    border-top: 1px solid white;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.label  {
+    padding: 10px 5px;
+    display: inline-block;
+    border-right: 1px solid white;
+}
+.label:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    width: 100px;
+    top: 81px;
+    height: auto;
+    background-color: grey;
+    box-shadow: 2px 2px 2px black;
+    display: none;
+}
+.menu li {
+    border-bottom: 1px solid white;
+    padding: 3px;
+}
+.menu li:last-of-type {
+    border: none;
+}
+.label:hover .menu {
+    display: block;
+}
+.menu li:hover {
+    background-color: lightgray;
+}
 
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.contact {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 50px;
+} 
+.image {
+    margin-left: 0%;
+    width: 10%;
+    
+    float: left;
+}
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    float: left;
+}
+body {
+    margin: 0;
+}
+label {
+    font-size: 15pt;
+    color: white;
+    cursor: pointer;
+}
 .foot {
     text-align: left;
     width: 25%;
+    position: absolute;
+    display: inline-block;
+    padding: 20px;
+    top: 110%;
 }
+.directions { 
+    position: absolute;
+    top: 100%;
+    right: 40%;
+}
+
+footer {
+    width: 100%;
+}
+
+
+#serv1 {
+    background-image: url(http://www.adrenalinecycleinc.com/2012/wordpress/wp-content/uploads/2012/04/mobile-dyno.jpg);
+    background-size: 100%;
+}
+#serv2 {
+    background-image: url(http://cdnmedia.endeavorsuite.com/images/serviceIcons//icons_dark/engine.png);
+    background-size: 100%;
+}
+#serv3 {
+    background-image: url(http://www.rental-world.com/wp-content/uploads/2014/10/john.deere_.tractor.3720.rental.with_.hoe_.jpg);
+    background-size: 100%;
+}
+#serv4 {
+    background-image: url(http://cdnmedia.endeavorsuite.com/images/ThumbGenerator/Thumb.aspx?img=http:%2F%2Fcdnmedia.endeavorsuite.com%2Fimages%2Forganizationsstg%2F0cc34cc2-40ab-4497-80c5-861d381672ff%2Fcta3.jpg&v=1486534281929&w=537);
+    background-size: 100%;
+}
+.service {
+    display: inline-block;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px grey;
+    position: relative;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.service:hover {
+    box-shadow: 1px 1px 1px black;
+    top: 5px;
+    left: 5px;
+}
+.name {
+    font-size: 20pt;
+    font-family: sans-serif;
+    color: red;
+    text-shadow: 3px 3px 3px black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+p {
+    text-align: center;
+}
+
+
+@media(max-width: 40em) {
+    nav {
+        display: none;
+    }
+    header .label {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-left: 1px solid white;
+    }
+    .menu {
+        top: 44px;
+        bottom: auto;
+}
+    
+    

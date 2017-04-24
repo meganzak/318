@@ -21,9 +21,6 @@ nav {
 ul {
     padding: 0;
 }
-li {
-    list-style: none;
-}
 .label  {
     padding: 10px 5px;
     display: inline-block;
@@ -32,6 +29,11 @@ li {
 .label:hover {
     background-color: gray;
     cursor: pointer;
+}
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
 }
 .menu {
     position: absolute;
@@ -56,22 +58,28 @@ li {
     background-color: lightgray;
 }
 
-a {
-    display: block;
-    color: white;
-    text-decoration: none;
-}
+
 
 
 
 .contact {
     text-align: right;
+    position: absolute;
+    right: 0;
+    top: 50px;
 } 
 .image {
     margin-left: 0%;
+    width: 10%;
+    
+    float: left;
 }
 h1 {
     text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    float: left;
 }
 
 
@@ -127,22 +135,23 @@ input {
     text-align: center;
 }
 
-.directions {
-    text-align: center; 
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    margin-top: 25%;
-    }
-
 .foot {
     text-align: left;
     width: 25%;
-    position: relative;
+    position: absolute;
     display: inline-block;
     padding: 20px;
+    top: 110%;
+}
+.directions { 
+    position: absolute;
+    top: 100%;
+    right: 40%;
 }
 
+footer {
+    width: 100%;
+}
 
 
 @media(max-width: 40em) {
@@ -160,6 +169,7 @@ input {
     .menu {
         top: 44px;
         bottom: auto;
+    }
 }
     
     

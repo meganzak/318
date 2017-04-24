@@ -5,6 +5,51 @@
         <link href="contact.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <header>
+            <div class="image"><img src="images/logo.png"></div>
+            <h1>Power Pac Inc.</h1>
+            <div class="label">&#9776;
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact"><b><u>Contact Us</u></b><br>
+                Phone: (715) 387-1106 <br>
+                Email: mail@powerpacequipment.com
+            </div>
+            
+        </header>
+		<nav>
+            <ul>
+                <li class="label"> 
+                    <div><a href="about.html">Home</a>
+                    </div>
+                </li><li class="label">
+                    About Us
+                    <div class="menu"><a href="about.html">About Us</a>
+                    </div>
+                </li><li class="label">
+                    Services
+                    <div class="menu"><a href="services.html">Services</a>
+                </div>
+                </li><li class="label">
+                    Inventory
+                    <div class="menu"><a href="inventory.html">Inventory</a>
+                    </div>
+                </li><li class="label">
+                    Contact Us
+                    <div class="menu"><a href="contact.html">Contact Us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
         <form action="https://formspree.io/zakmm2648@uwec.edu" method="post">
             <h1>Contact Us</h1>
 				<label>*Name:</label>
@@ -38,42 +83,11 @@
 			<br>
 			<input type="submit" name="send" id="send" value="Send">
         </form>
+        </main>
+        <footer>
+            <div class="foot">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </div>
+            
+                <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2839.3841315921973!2d-90.18340008427465!3d44.63006539673119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87ffc30c090fec4d%3A0xd93810cd5ad17202!2sPower+Pac+Inc%2C+3802+S+Central+Ave%2C+Marshfield%2C+WI+54449!3m2!1d44.6300616!2d-90.1812114!5e0!3m2!1sen!2sus!4v1492623756356" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> 
+        </footer>
     </body>
 </html>
-
-CSS:
-* {
-    box-sizing: border-box;
-    margin: 5px;
-}
-option {
-    margin: 0;
-}
-h1 {
-    text-align: center;
-}
-form {
-    float: left;
-    width: 600px;
-    background-color: azure;
-    border-radius: 10px;
-}
-select, input, li, textarea {
-    float: left;
-}
-select, #range, #name, textarea {
-    width: 250px;
-}
-label {
-    float: left;
-    width: 250px;
-    clear: left;
-}
-#true, #false {
-    clear: none;
-    float: left;
-    width: auto;
-}
-textarea {
-    height: 75px;
-}
