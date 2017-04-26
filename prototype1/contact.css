@@ -33,6 +33,11 @@ li {
     background-color: gray;
     cursor: pointer;
 }
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
 .menu {
     position: absolute;
     width: 100px;
@@ -151,6 +156,7 @@ footer {
     .menu {
         top: 44px;
         bottom: auto;
+    }
 }
     
     
