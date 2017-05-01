@@ -21,9 +21,6 @@ nav {
 ul {
     padding: 0;
 }
-li {
-    list-style: none;
-}
 .label  {
     padding: 10px 5px;
     display: inline-block;
