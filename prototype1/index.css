@@ -1,93 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: sans-serif;
-}
-header {
-    background-color: maroon;
-    color: white;
-    padding: 5px;
-    display: inline-block;
-    width: 100%;
-}
-header .label {
-    display: none;
-}
-nav {
-    background-color: darkblue;
-    color: white;
-    border-top: 1px solid white;
-}
-ul {
-    padding: 0;
-}
-.label  {
-    padding: 10px 5px;
-    display: inline-block;
-    border-right: 1px solid white;
-}
-.label:hover {
-    background-color: gray;
-    cursor: pointer;
-}
-a {
-    display: block;
-    color: white;
-    text-decoration: none;
-}
-.menu {
-    position: absolute;
-    width: 100px;
-    top: 81px;
-    height: auto;
-    background-color: grey;
-    box-shadow: 2px 2px 2px black;
-    display: none;
-}
-.menu li {
-    border-bottom: 1px solid white;
-    padding: 3px;
-}
-.menu li:last-of-type {
-    border: none;
-}
-.label:hover .menu {
-    display: block;
-}
-.menu li:hover {
-    background-color: lightgray;
-}
-
-
-
-
-.contact {
-    text-align: right;
-    position: absolute;
-    right: 0;
-    top: 50px;
-} 
-.image {
-    margin-left: 0%;
-    width: 10%;
-    
-    float: left;
-}
-h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    width: 80%;
-    float: left;
-}
-
-
-body {
-    margin: 0;
-}
 #container {
     background-color: navy;
-    height: 300px;
+    height: 600px;
     position: relative;
 }
 .page {
@@ -117,62 +30,13 @@ input[type="radio"]:checked + .page {
     transform: translate(-50%, 0);
     font-size: 20pt;
 }
-label {
-    font-size: 15pt;
-    color: white;
-    cursor: pointer;
-}
 #show1:checked ~ #controls label:nth-child(1),  #show2:checked ~ #controls label:nth-child(2), #show3:checked ~ #controls label:nth-child(3){
     color: dimgrey;
 }
-input {
-    display: none;
-} 
 .welcome {
     position: relative;
     margin-top: 35%;
     text-align: center;
+    width: 70%;
 }
-
-.foot {
-    text-align: left;
-    width: 25%;
-    position: absolute;
-    display: inline-block;
-    padding: 20px;
-    top: 110%;
-}
-.directions { 
-    position: absolute;
-    top: 100%;
-    right: 40%;
-}
-
-footer {
-    width: 100%;
-}
-
-
-@media(max-width: 40em) {
-    nav {
-        display: none;
-    }
-    header .label {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        border-left: 1px solid white;
-    }
-    .menu {
-        top: 44px;
-        bottom: auto;
-    }
-}
-    
-    
-    
-
-    
 
