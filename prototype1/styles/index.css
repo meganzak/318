@@ -12,13 +12,14 @@
     background-repeat: no-repeat;
 }
 #page1 {
-    background-image: url(images/banner1.jpg);
+    background-image: url(../images/banner1.jpg);
+    
 }
 #page2 {
-    background-image: url(images/banner2.jpg);
+    background-image: url(../images/banner2.jpg);
 }
 #page3 {
-    background-image: url(images/banner3.jpg);
+    background-image: url(../images/banner3.jpg);
 }
 input[type="radio"]:checked + .page {
     display: block;
@@ -28,15 +29,17 @@ input[type="radio"]:checked + .page {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    font-size: 20pt;
+    font-size: 50pt;
+    transform: scale(1.5);
 }
 #show1:checked ~ #controls label:nth-child(1),  #show2:checked ~ #controls label:nth-child(2), #show3:checked ~ #controls label:nth-child(3){
-    color: dimgrey;
+    color: navy;
 }
 .welcome {
     position: relative;
-    margin-top: 35%;
+    margin-top: 0%;
     text-align: center;
-    width: 70%;
+    width: 100%;
+    font-family: sans-serif;
 }
 
